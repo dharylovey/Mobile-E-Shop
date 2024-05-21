@@ -1,0 +1,74 @@
+1. Next JS 
+
+npx create-next-app@latest
+
+2. ShadCn UI
+
+npx shadcn-ui@latest init
+
+3. React Icons
+
+npm i react-icons
+
+4. Next Theme
+
+npm install next-themes
+
+5. Prettier - https://dev.to/jsdevspace/setup-nextjs-14-project-with-eslint-prettier-tailwind-css-226j
+
+npm install --save-dev eslint prettier eslint-plugin-react eslint-config-prettier eslint-plugin-prettier prettier-plugin-tailwindcss
+
+Create an ESLint configuration file named .eslintrc.js in your project root:
+
+module.exports = {
+  extends: ['next', 'next/core-web-vitals', 'eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+  plugins: ['react', '@typescript-eslint'],
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+  },
+  rules: {
+    // Add your custom ESLint rules here
+  },
+};
+
+Create a Prettier configuration file named .prettierrc.js in your project root:
+
+module.exports = {
+  semi: true,
+  trailingComma: 'all',
+  singleQuote: true,
+  printWidth: 100,
+  tabWidth: 2,
+  plugins: ["prettier-plugin-tailwindcss"],
+};
+
+If you're using Visual Studio Code, you can install the ESLint and Prettier extensions for automatic linting and formatting.
+
+Add the following scripts to your package.json file:
+
+"scripts": {
+  "lint": "eslint .",
+  "format": "prettier --write ."
+}
+
+Run ESLint and Prettier
+
+npm run lint     # Run ESLint
+npm run format   # Format code with Prettier
+
+
+6. Auth JS v5 - https://authjs.dev/getting-started/installation
+
+npm install next-auth@beta
+
+npx auth secret
+
+7. Prisma
+
+npm install @prisma/client @auth/prisma-adapter
+npm install prisma --save-dev
+
+npx prisma init
+npx prisma generate
+npx prisma db push
