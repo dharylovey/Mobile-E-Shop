@@ -31,7 +31,7 @@ export default function Navbar() {
     setOpen((prevNav) => !prevNav);
   };
   return (
-    <header className="px-4 py-6 md:px-[160px] md:py-5 border-b-[1px] border-[#B5B5B5]">
+    <header className="px-4 py-6 lg:px-[160px] lg:py-5 border-b-[1px] border-[#B5B5B5]">
       <nav className="flex items-center justify-between self-stretch">
         <Image
           src={"./images/cyber.svg"}
@@ -60,7 +60,7 @@ export default function Navbar() {
                 open ? "flex" : "hidden"
               } absolute top-20 inset-x-0 mx-4 my-2 min-w-[140px] rounded-xl`}
             >
-              <ul className="flex flex-col justify-end flex-1 gap-2 p-5 bg-slate-100 dark:bg-slate-900 rounded-2xl">
+              <ul className="flex flex-col justify-end flex-1 gap-2 p-5 bg-[#EDEDED] rounded-2xl">
                 {NavLinks.map((link) => (
                   <li
                     className={
