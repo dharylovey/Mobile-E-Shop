@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Banner() {
   return (
-    <div className="flex flex-col w-full justify-center items-center flex-auto">
+    <div className="lg:hidden flex flex-col w-full justify-center items-center flex-auto">
       <div className="flex flex-col justify-center items-center gap-6 self-stretch px-4 py-10">
         <Image
           src={"/images/headphone.png"}
