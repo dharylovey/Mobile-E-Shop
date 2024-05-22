@@ -61,7 +61,7 @@ export default function Banner() {
       </div>
       <div className="flex flex-col justify-center items-center gap-6 self-stretch px-4 py-10 bg-[#EDEDED]">
         <Image
-          src={"/images/Macbook Pro 14.png"}
+          src={"/images/Macbook.png"}
           alt="banner"
           width={192}
           height={200}
