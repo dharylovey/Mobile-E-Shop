@@ -64,7 +64,9 @@ export default function Navbar() {
                 {NavLinks.map((link) => (
                   <li
                     className={
-                      pathname === link.href ? "text-black" : "opacity-30"
+                      pathname === link.href
+                        ? "text-black text-2xl"
+                        : "opacity-30 text-2xl"
                     }
                     key={link.name}
                   >
