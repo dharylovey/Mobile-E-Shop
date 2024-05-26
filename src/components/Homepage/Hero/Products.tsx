@@ -77,12 +77,18 @@ export default function Products() {
     .sort((a, b) => a.sort - b.sort)
     .map((a) => a.value);
   return (
-    <section className="flex flex-col items-center py-14 px-4 gap-8 mx-auto">
+    <section className="flex flex-col items-center py-14 px-4 gap-8 lg:py-14  lg:px-[160px] mx-auto">
       <Tabs defaultValue="New Arrival">
         <TabsList>
-          <TabsTrigger value="New Arrival">New Arrival</TabsTrigger>
-          <TabsTrigger value="Best Seller">Best Seller</TabsTrigger>
-          <TabsTrigger value="Featured Products">Featured Products</TabsTrigger>
+          <TabsTrigger value="New Arrival" className="lg:text-lg">
+            New Arrival
+          </TabsTrigger>
+          <TabsTrigger value="Best Seller" className="lg:text-lg">
+            Best Seller
+          </TabsTrigger>
+          <TabsTrigger value="Featured Products" className="lg:text-lg">
+            Featured Products
+          </TabsTrigger>
         </TabsList>
         <TabsContent
           value="New Arrival"
