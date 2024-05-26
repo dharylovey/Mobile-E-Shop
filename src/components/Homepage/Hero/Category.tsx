@@ -9,7 +9,7 @@ import { CgGames } from "react-icons/cg";
 
 export default function Category() {
   return (
-    <section className="flex w-[375px] py-16 px-4 flex-col gap-12 mx-auto self-stretch lg:w-full  lg:px-[160px] lg:py-[80px] lg:flex-col lg:gap-8 lg:items-start">
+    <section className="flex w-[375px] py-16 px-4 flex-col gap-12 mx-auto self-stretch md:w-[700px] lg:w-full  lg:px-[160px] lg:py-[80px] lg:flex-col lg:gap-8 lg:items-start">
       <div className="flex justify-between items-center self-stretch">
         <h2 className="font-medium leading-8 text-xl">Browse By Category</h2>
         <div className="flex items-start gap-4">
