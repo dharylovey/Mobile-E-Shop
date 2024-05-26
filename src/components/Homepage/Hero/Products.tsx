@@ -114,15 +114,59 @@ export default function Products() {
         </TabsContent>
         <TabsContent
           value="Best Seller"
-          className="flex flex-col items-start gap-4 self-stretch"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4"
         >
-          2
+          {randomizedProducts.map((product) => (
+            <Card key={product.id} className="bg-[#F6F6F6]">
+              <CardHeader className="flex items-end">
+                <CiHeart size={24} className="text-red-500" />
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src={product.image}
+                  width={200}
+                  height={200}
+                  alt="products"
+                  className="text-center flex justify-center items-center mx-auto"
+                />
+                <div className="flex flex-col gap-4">
+                  <h3 className="line-clamp-2 text-center font-medium leading-6">
+                    {product.description}
+                  </h3>
+                  <p className="text-center font-semibold">${product.price}</p>
+                  <Button className="w-full flex mt-auto">Buy Now</Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </TabsContent>
         <TabsContent
           value="Featured Products"
-          className="flex flex-col items-start gap-4 self-stretch"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4"
         >
-          3
+          {randomizedProducts.map((product) => (
+            <Card key={product.id} className="bg-[#F6F6F6]">
+              <CardHeader className="flex items-end">
+                <CiHeart size={24} className="text-red-500" />
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src={product.image}
+                  width={200}
+                  height={200}
+                  alt="products"
+                  className="text-center flex justify-center items-center mx-auto"
+                />
+                <div className="flex flex-col gap-4">
+                  <h3 className="line-clamp-2 text-center font-medium leading-6">
+                    {product.description}
+                  </h3>
+                  <p className="text-center font-semibold">${product.price}</p>
+                  <Button className="w-full flex mt-auto">Buy Now</Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </TabsContent>
       </Tabs>
       <div></div>
