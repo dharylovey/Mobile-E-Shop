@@ -1,4 +1,5 @@
 import Banner from "@/components/Homepage/Hero/Banner";
+import BigBanner from "@/components/Homepage/Hero/BigBanner";
 import Category from "@/components/Homepage/Hero/Category";
 import Hero from "@/components/Homepage/Hero/Hero";
 import Products from "@/components/Homepage/Hero/Products";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <SmallBanner />
       <Category />
       <Products />
+      <BigBanner />
     </>
   );
 }

@@ -33,12 +33,9 @@ export default function Navbar() {
   return (
     <header className="px-4 py-6 lg:px-[160px] lg:py-5 border-b-[1px] border-[#B5B5B5]">
       <nav className="flex items-center justify-between self-stretch">
-        <Image
-          src={"./images/cyber.svg"}
-          alt="logo"
-          width={65.4}
-          height={22.872}
-        />
+        <Link href={"/"} className="flex items-center gap-2">
+          <h1 className="text-3xl font-semibold">cyber</h1>
+        </Link>
         <div className="hidden  lg:flex lg:items-center lg:w-[372px] lg:h-14">
           <CiSearch className="absolute ml-[10px]" />
           <Input placeholder="Search" className="pl-7" />
