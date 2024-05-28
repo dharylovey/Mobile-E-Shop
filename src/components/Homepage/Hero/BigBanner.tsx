@@ -22,8 +22,9 @@ import { Button } from "@/components/ui/button";
 
 export default function BigBanner() {
   return (
-    <section className="flex items-center justify-center py-4 self-stretch">
+    <section className="flex items-center justify-center py-6 self-stretch ">
       <MobileCarousel />
+      <DesktopCarousel />
     </section>
   );
 }
@@ -36,7 +37,7 @@ function MobileCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xs"
+      className="w-full max-w-xs md:hidden bg-[#F9F9F9]"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -74,5 +75,45 @@ function MobileCarousel() {
         ))}
       </CarouselContent>
     </Carousel>
+  );
+}
+
+function DesktopCarousel() {
+  const backgrounds = [
+    "bg-[#FFF]",
+    "bg-[#F9F9F9]",
+    "bg-[#EAEAEA]",
+    "bg-[#2C2C2C]",
+  ];
+  const filterProduct = products.slice(0, 4);
+  return (
+    <div className="hidden  items-start md:grid md:grid-cols-2 lg:flex">
+      {filterProduct.map((product, index) => (
+        <div
+          className={`flex flex-col w-full  items-start py-10 gap-6 px-8 ${backgrounds[index % backgrounds.length]} ${index === 3 ? "text-[#FFF]" : ""}`}
+          key={index}
+        >
+          <Image
+            src={product.image}
+            width={300}
+            height={300}
+            alt="products"
+            className="text-center flex justify-center items-center mx-auto"
+          />
+          <h3 className="text-3xl font-light leading-10 line-clamp-1">
+            {product.name}
+          </h3>
+          <p className="text-[#909090]">{product.description}</p>
+          <Link href={`/product/${product.id}`}>
+            <Button
+              variant={"outline"}
+              className={`${index === 3 ? "bg-[#2C2C2C]" : ""}`}
+            >
+              Shop Now
+            </Button>
+          </Link>
+        </div>
+      ))}
+    </div>
   );
 }
