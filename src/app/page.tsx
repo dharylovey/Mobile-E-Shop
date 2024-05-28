@@ -10,13 +10,13 @@ import React from "react";
 export default function HomePage() {
   return (
     <>
-      {/* <Hero />
+      <Hero />
       <Banner />
       <SmallBanner />
       <Category />
       <Products />
       <BigBanner />
-      <DiscountProduct /> */}
+      <DiscountProduct />
     </>
   );
 }
