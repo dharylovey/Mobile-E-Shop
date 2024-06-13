@@ -72,3 +72,5 @@ npm install prisma --save-dev
 npx prisma init
 npx prisma generate
 npx prisma db push
+
+
