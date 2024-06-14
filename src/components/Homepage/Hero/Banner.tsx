@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Banner() {
@@ -77,13 +78,15 @@ export default function Banner() {
           The new 15‑inch MacBook Air makes room for more of what you love with
           a spacious Liquid Retina display.
         </p>
-        <Button
-          variant={"outline"}
-          size={"lg"}
-          className="border-[#000] bg-transparent text-base font-medium leading-6 text-[#000]"
-        >
-          Shop Now
-        </Button>
+        <Link href={"/product"}>
+          <Button
+            variant={"outline"}
+            size={"lg"}
+            className="border-[#000] bg-transparent text-base font-medium leading-6 text-[#000]"
+          >
+            Shop Now
+          </Button>
+        </Link>
       </div>
     </div>
   );

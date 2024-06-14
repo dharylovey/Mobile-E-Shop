@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../../ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -26,13 +27,15 @@ export default function Hero() {
         <p className="text-[#909090] text-center text-[19px] md:text-lg font-medium leading-6">
           Created to change everything for the better. For everone
         </p>
-        <Button
-          variant={"outline"}
-          size={"lg"}
-          className="bg-transparent text-[#fff] text-base font-medium leading-6"
-        >
-          Shop Now
-        </Button>
+        <Link href={"/product"}>
+          <Button
+            variant={"outline"}
+            size={"lg"}
+            className="bg-transparent text-[#fff] text-base font-medium leading-6"
+          >
+            Shop Now
+          </Button>
+        </Link>
       </div>
       <div className="flex px-3 justify-center items-center self-stretch md:flex-grow lg:flex-grow-0 ">
         <Image src={"/images/Iphone.png"} alt="" width={400} height={400} />
