@@ -99,14 +99,14 @@ export default function SmallBanner() {
                     love with a spacious Liquid Retina display.
                   </p>
                   <Link href={"/product"}>
-                  <Button
-                    variant={"outline"}
-                    size={"lg"}
-                    className="border-[#000] bg-transparent text-base font-medium leading-6 text-[#000]"
+                    <Button
+                      variant={"outline"}
+                      size={"lg"}
+                      className="border-[#000] bg-transparent text-base font-medium leading-6 text-[#000]"
                     >
-                    Shop Now
-                  </Button>
-                    </Link>
+                      Shop Now
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col ml-5 w-[45%] max-md:ml-0 max-md:w-full justify-end">
