@@ -60,7 +60,7 @@ export default function Product() {
                     className="text-center flex justify-center items-center mx-auto"
                   />
                   <div className="flex flex-col gap-4">
-                    <h3 className="line-clamp-2 text-center font-medium leading-6">
+                    <h3 className="line-clamp-1 text-center font-medium leading-6">
                       {product.name}
                     </h3>
                     <p className="text-center font-semibold">

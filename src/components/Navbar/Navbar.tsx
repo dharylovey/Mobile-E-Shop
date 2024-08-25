@@ -13,9 +13,7 @@ import { usePathname } from "next/navigation";
 
 const NavLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
   { name: "Contact Us", href: "/contact" },
-  { name: "Blog", href: "/blog" },
   { name: "Products", href: "/product" },
 ];
 
@@ -49,7 +47,7 @@ export default function Navbar() {
             variant={"ghost"}
             size={"icon"}
             onClick={handleClick}
-            className="lg:hidden"
+            className="  md:block xl:hidden"
           >
             {open ? <IoMdClose size={24} /> : <RxHamburgerMenu size={24} />}
 
