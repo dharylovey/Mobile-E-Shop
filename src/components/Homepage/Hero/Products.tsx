@@ -45,9 +45,9 @@ export default function Product() {
           value="New Arrival"
           className="grid grid-cols-2 lg:grid-cols-4 gap-4"
         >
-          {randomizedProducts.map((product) => (
+          {randomizedProducts.slice(0, 8).map((product) => (
             <Card key={product.id} className="bg-[#F6F6F6]">
-              <Link href={`/product/${product.id}`}>
+              <Link href={`/products/${product.id}`}>
                 <CardHeader className="flex items-end">
                   <CiHeart size={24} className="text-red-500" />
                 </CardHeader>
@@ -77,9 +77,9 @@ export default function Product() {
           value="Best Seller"
           className="grid grid-cols-2 lg:grid-cols-4 gap-4"
         >
-          {randomizedProducts2.map((product) => (
+          {randomizedProducts2.slice(0, 8).map((product) => (
             <Card key={product.id} className="bg-[#F6F6F6]">
-              <Link href={`/product/${product.id}`}>
+              <Link href={`/products/${product.id}`}>
                 <CardHeader className="flex items-end">
                   <CiHeart size={24} className="text-red-500" />
                 </CardHeader>
@@ -109,9 +109,9 @@ export default function Product() {
           value="Featured Products"
           className="grid grid-cols-2 lg:grid-cols-4 gap-4"
         >
-          {randomizedProducts3.map((product) => (
+          {randomizedProducts3.slice(0, 8).map((product) => (
             <Card key={product.id} className="bg-[#F6F6F6]">
-              <Link href={`/product/${product.id}`}>
+              <Link href={`/products/${product.id}`}>
                 <CardHeader className="flex items-end">
                   <CiHeart size={24} className="text-red-500" />
                 </CardHeader>

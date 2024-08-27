@@ -15,7 +15,7 @@ export default function DiscountProduct() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {filterProduct.map((product) => (
           <Card key={product.id} className="bg-[#F6F6F6] w-full">
-            <Link href={`/product/${product.id}`}>
+            <Link href={`/products/${product.id}`}>
               <CardHeader className="flex items-end">
                 <CiHeart size={24} className="text-red-500" />
               </CardHeader>

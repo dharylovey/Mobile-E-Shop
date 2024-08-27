@@ -27,7 +27,7 @@ export default function Hero() {
         <p className="text-[#909090] text-center text-[19px] md:text-lg font-medium leading-6">
           Created to change everything for the better. For everone
         </p>
-        <Link href={"/product"}>
+        <Link href={"/products"}>
           <Button
             variant={"outline"}
             size={"lg"}

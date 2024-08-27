@@ -49,7 +49,7 @@ function MobileCarousel() {
                 key={product.id}
                 className="border-none shadow-none rounded-none"
               >
-                <Link href={`/product/${product.id}`}>
+                <Link href={`/products/${product.id}`}>
                   <CardContent className="flex aspect-square items-center justify-center p-6">
                     <Image
                       src={product.image}
@@ -104,7 +104,7 @@ function DesktopCarousel() {
             {product.name}
           </h3>
           <p className="text-[#909090]">{product.description}</p>
-          <Link href={`/product/${product.id}`}>
+          <Link href={`/products/${product.id}`}>
             <Button
               variant={"outline"}
               className={`${index === 3 ? "bg-[#2C2C2C]" : ""}`}

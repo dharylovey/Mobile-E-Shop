@@ -98,7 +98,7 @@ export default function SmallBanner() {
                     The new 15‑inch MacBook Air makes room for more of what you
                     love with a spacious Liquid Retina display.
                   </p>
-                  <Link href={"/product"}>
+                  <Link href={"/products"}>
                     <Button
                       variant={"outline"}
                       size={"lg"}
