@@ -42,7 +42,7 @@ export default function ProductsPage() {
         </div>
       </div>
       {/* products */}
-      <div className="w-full justify-center items-center pt-10">
+      <div className="w-full justify-center items-center pt-10 px-4">
         {/* products results */}
         <div className="flex flex-grow w-full flex-col justify-center items-start mx-auto pb-3">
           {/* results */}
