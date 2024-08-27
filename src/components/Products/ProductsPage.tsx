@@ -42,7 +42,7 @@ export default function ProductsPage() {
         </div>
       </div>
       {/* products */}
-      <div className="w-full justify-center items-center pt-10 px-4">
+      <div className="w-full justify-center items-center pt-10 ">
         {/* products results */}
         <div className="flex flex-grow w-full flex-col justify-center items-start mx-auto pb-3">
           {/* results */}
@@ -55,7 +55,7 @@ export default function ProductsPage() {
             </span>
           </div>
           {/* products grid*/}
-          <div className="flex  items-center justify-center">
+          <div className="flex  items-center justify-center px-4">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {products.slice(0, 8).map((product) => (
                 <Card key={product.id} className="bg-[#F6F6F6]">
