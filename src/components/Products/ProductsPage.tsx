@@ -21,9 +21,9 @@ export default function ProductsPage() {
   return (
     <div className="flex flex-col justify-center items-center px-4 mx-auto">
       {/* filter */}
-      <div className="flex w-[344px]  justify-center items-center gap-4 pt-10">
+      <div className="flex  w-[344px] md:w-full lg:justify-between  justify-center items-center gap-4 pt-10 px-4">
         {/* 1st div */}
-        <div className="flex min-w[140px] p-4 justify-between items-center flex-1 flex-shrink-0 basis-0 rounded-[8px] border-[1px] border-[#D4D4D4] bg-[#fff]  ">
+        <div className="flex min-w[140px] md:w-[344px] p-4 justify-between items-center flex-1 flex-shrink-0 basis-0 rounded-[8px] border-[1px] border-[#D4D4D4] bg-[#fff]  ">
           <p className="text-[#000] text-[15px] font-normal leading-4 tracking-[-0.75px]">
             Filters
           </p>
@@ -32,7 +32,7 @@ export default function ProductsPage() {
           </button>
         </div>
         {/* 2nd div */}
-        <div className="flex min-w[140px] p-4 justify-between items-center flex-1 flex-shrink-0 basis-0 rounded-[8px] border-[1px] border-[#D4D4D4] bg-[#fff]">
+        <div className="flex min-w[140px] mdw-[344px] p-4 justify-between items-center flex-1 flex-shrink-0 basis-0 rounded-[8px] border-[1px] border-[#D4D4D4] bg-[#fff]">
           <p className="text-[#000] text-[15px] font-normal leading-4 tracking-[-0.75px]">
             By Rating
           </p>
@@ -46,7 +46,7 @@ export default function ProductsPage() {
         {/* products results */}
         <div className="flex flex-grow w-full flex-col justify-center items-start mx-auto pb-3">
           {/* results */}
-          <div className="flex items-end gap-4 pb-4">
+          <div className="flex items-end gap-4 pb-4 px-4">
             <p className="text-[#6C6C6C] text-[16px] font-normal leading-4 tracking-[0.48px]">
               Products Result:{" "}
             </p>{" "}
