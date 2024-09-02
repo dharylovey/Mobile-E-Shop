@@ -10,7 +10,7 @@ export default function Cart() {
   const [count, setCount] = useState(0);
   return (
     <div className="flex h-full items-center px-[160px] py-[112px]">
-      <div className="flex gap-[48px]">
+      <div className="flex w-full gap-[48px]">
         <div className="gap-[40px] flex flex-col">
           <h3>Shopping Cart</h3>
 
@@ -116,6 +116,9 @@ export default function Cart() {
         </div>
         <div>
           <h1 className="capitalize">checkout form in this side</h1>
+          <p className="capitalize text-gray-500 text-sm">
+            This page is not yet responsive
+          </p>
         </div>
       </div>
     </div>
