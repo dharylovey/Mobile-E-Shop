@@ -1,8 +1,9 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { CiHeart, CiShoppingCart, CiUser } from "react-icons/ci";
-import { Tooltip, TooltipProvider } from "../ui/tooltip";
+import { Tooltip, TooltipProvider } from "@/components/ui/tooltip";
 import { TooltipContent, TooltipTrigger } from "@radix-ui/react-tooltip";
+import Link from "next/link";
 
 export default function NavbarCart() {
   return (
@@ -23,7 +24,9 @@ export default function NavbarCart() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Button variant={"ghost"} size={"icon"}>
-              <CiShoppingCart size={24} />
+              <Link href={"/shop/cart"}>
+                <CiShoppingCart size={24} />
+              </Link>
             </Button>
           </TooltipTrigger>
           <TooltipContent>
