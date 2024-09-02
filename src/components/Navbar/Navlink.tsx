@@ -9,7 +9,7 @@ interface Navlink {
 export default function Navlink({ links }: { links: Navlink[] }) {
   const pathname = usePathname();
   return (
-    <ul className="hidden xlr:flex  gap-[52px] items-start">
+    <ul className="hidden xl:flex  gap-[52px] items-start">
       {links.map((link) => (
         <li
           key={link.name}

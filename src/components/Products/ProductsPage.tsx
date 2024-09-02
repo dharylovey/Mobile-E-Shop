@@ -1,5 +1,6 @@
-import React from "react";
-import { GiSettingsKnobs } from "react-icons/gi";
+"use client";
+
+import React, { useState } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import Link from "next/link";
@@ -16,29 +17,24 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { ProductSheet } from "./ProductSheet";
 
 export default function ProductsPage() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="flex flex-col justify-center items-center px-4 mx-auto">
       {/* filter */}
       <div className="flex  w-[344px] md:w-full lg:justify-between  justify-center items-center gap-4 pt-10 px-4">
         {/* 1st div */}
-        <div className="flex min-w[140px] md:w-[344px] p-4 justify-between items-center flex-1 flex-shrink-0 basis-0 rounded-[8px] border-[1px] border-[#D4D4D4] bg-[#fff]  ">
-          <p className="text-[#000] text-[15px] font-normal leading-4 tracking-[-0.75px]">
-            Filters
-          </p>
-          <button>
-            <GiSettingsKnobs />
-          </button>
-        </div>
+        <ProductSheet />
         {/* 2nd div */}
         <div className="flex min-w[140px] mdw-[344px] p-4 justify-between items-center flex-1 flex-shrink-0 basis-0 rounded-[8px] border-[1px] border-[#D4D4D4] bg-[#fff]">
           <p className="text-[#000] text-[15px] font-normal leading-4 tracking-[-0.75px]">
             By Rating
           </p>
-          <button>
+          <div>
             <MdOutlineKeyboardArrowDown />
-          </button>
+          </div>
         </div>
       </div>
       {/* products */}
@@ -101,24 +97,24 @@ export function ProductPagination() {
     <Pagination className="m-4 flex justify-center md:justify-end ">
       <PaginationContent>
         <PaginationItem>
-          <PaginationPrevious href="#" />
+          <PaginationPrevious href="" />
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="#">1</PaginationLink>
+          <PaginationLink href="">1</PaginationLink>
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="#" isActive>
+          <PaginationLink href="" isActive>
             2
           </PaginationLink>
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="#">3</PaginationLink>
+          <PaginationLink href="">3</PaginationLink>
         </PaginationItem>
         <PaginationItem>
           <PaginationEllipsis />
         </PaginationItem>
         <PaginationItem>
-          <PaginationNext href="#" />
+          <PaginationNext href="" />
         </PaginationItem>
       </PaginationContent>
     </Pagination>

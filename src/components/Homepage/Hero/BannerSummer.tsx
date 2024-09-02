@@ -15,7 +15,7 @@ export function BannerSummer() {
             Commodo fames vitae vitae leo mauris in. Eu consequat.
           </p>
         </div>
-        <Link href={"/product"}>
+        <Link href={"/products"}>
           <Button
             variant={"outline"}
             className="bg-transparent text-[#fff]"
